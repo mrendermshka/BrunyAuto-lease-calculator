@@ -1,0 +1,7 @@
+F:\Labs\Application development based on component approaches\Lab1\Lab1\obj\Debug\Lab1.csproj.AssemblyReference.cache
+F:\Labs\Application development based on component approaches\Lab1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+F:\Labs\Application development based on component approaches\Lab1\Lab1\bin\Debug\Lab1.exe.config
+F:\Labs\Application development based on component approaches\Lab1\Lab1\bin\Debug\Lab1.exe
+F:\Labs\Application development based on component approaches\Lab1\Lab1\bin\Debug\Lab1.pdb
+F:\Labs\Application development based on component approaches\Lab1\Lab1\obj\Debug\Lab1.exe
+F:\Labs\Application development based on component approaches\Lab1\Lab1\obj\Debug\Lab1.pdb
