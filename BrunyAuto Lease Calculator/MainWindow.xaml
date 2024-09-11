@@ -5,38 +5,177 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BrunyAuto_Lease_Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="656" Width="1024">
-    <Grid>
-        <Button Content="Print" HorizontalAlignment="Left" Click="Print_Click" Margin="609,49,0,0" VerticalAlignment="Top" Height="32" Width="61"/>
-        <Button Content="Calculate" HorizontalAlignment="Left" Margin="609,86,0,0" VerticalAlignment="Top" Height="32" Width="61" Click="Calculate_Click"/>
+        Title="BrunyAuto Calculator" Height="656" Width="1024"
+        ResizeMode="NoResize">
 
-        <Label Content="Початкова ціна" HorizontalAlignment="Left" Margin="49,26,0,0" VerticalAlignment="Top"/>
-        <Label Content="Процентна ставка" HorizontalAlignment="Left" Margin="177,26,0,0" VerticalAlignment="Top"/>
-        <Label Content="Строк лізингу (місяців)" HorizontalAlignment="Left" Margin="307,26,0,0" VerticalAlignment="Top"/>
-        <Label Content="Ціна каско" HorizontalAlignment="Left" Margin="56,76,0,0" VerticalAlignment="Top"/>
-        <Label Content="Податок" HorizontalAlignment="Left" Margin="177,79,0,0" VerticalAlignment="Top"/>
-        <Label Content="Початковий внесок" HorizontalAlignment="Left" Margin="313,87,0,0" VerticalAlignment="Top"/>
-        <Label Content="Валюта" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top"/>
-        <Label Content="Курс гривні до валюти" HorizontalAlignment="Center" Margin="0,96,0,0" VerticalAlignment="Top"/>
+    <Window.Resources>
+        <!-- Стиль для Label -->
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Helvetica Bold" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+
+        </Style>
+
+
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Helvetica Bold" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="BorderBrush" Value="#FF2386FE" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border CornerRadius="10" 
+                                Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ScrollViewer Margin="0" 
+                                          x:Name="PART_ContentHost" 
+                                          Focusable="false" 
+                                          HorizontalScrollBarVisibility="Hidden" 
+                                          VerticalScrollBarVisibility="Hidden" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- Стиль для RadioButton -->
+        <Style TargetType="RadioButton">
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Helvetica Bold" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border"
+                        Background="Transparent"
+                        BorderBrush="#FF1D87FF"
+                        BorderThickness="1"
+                        CornerRadius="10"
+                        >
+                            <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="Blue" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="LightGray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <Border Name="Border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10"
+                            SnapsToDevicePixels="True">
+
+                                <DockPanel>
+                                    <ContentPresenter HorizontalAlignment="Left"
+                                              VerticalAlignment="Center"
+                                              Margin="5,0,0,0"
+                                              Content="{TemplateBinding SelectionBoxItem}"
+                                              ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                              ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" />
+                                    <ToggleButton Name="ToggleButton"
+                                          Grid.Column="2"
+                                          Focusable="false"
+                                          IsChecked="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}"
+                                          ClickMode="Press"
+                                          Background="Transparent"
+                                          BorderBrush="Transparent"
+                                          BorderThickness="0"
+                                          Width="20"
+                                          HorizontalAlignment="Right">
+                                        <Path Fill="Gray" Data="M 0 0 L 4 4 L 8 0 Z" />
+                                    </ToggleButton>
+                                </DockPanel>
+                            </Border>
+
+                            <Popup Name="Popup"
+                           Placement="Bottom"
+                           IsOpen="{TemplateBinding IsDropDownOpen}"
+                           AllowsTransparency="True"
+                           Focusable="False"
+                           PopupAnimation="Slide">
+                                <Border Background="White"
+                                BorderBrush="Gray"
+                                BorderThickness="1"
+                                CornerRadius="10">
+                                    <ScrollViewer>
+                                        <StackPanel IsItemsHost="True" />
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+
+
+
+
+    </Window.Resources>
+    <Grid>
+
+        <Image Source="/86051.jpg" Margin="-18,49,737,401"></Image>
+        
+        <Button Content="Print" HorizontalAlignment="Left" Click="Print_Click" Margin="698,252,0,0" VerticalAlignment="Top"  Width="90" Height="30"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="834,252,0,0" VerticalAlignment="Top"  Width="90" Click="Calculate_Click" Height="30"/>
+
+        <Label Content="Початкова ціна" HorizontalAlignment="Left" Margin="286,49,0,0" VerticalAlignment="Top"  Width="124"/>
+        <Label Content="Процентна ставка" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top"  Width="147"/>
+        <Label Content="Строк лізингу (місяців)" HorizontalAlignment="Left" Margin="609,49,0,0" VerticalAlignment="Top"  Width="179"/>
+        <Label Content="Ціна каско" HorizontalAlignment="Left" Margin="305,133,0,0" VerticalAlignment="Top"  Width="88"/>
+        <Label Content="Податок" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top"  Width="81" />
+        <Label Content="Початковий внесок" HorizontalAlignment="Left" Margin="609,134,0,0" VerticalAlignment="Top"  Width="162"/>
+        <Label Content="Валюта" HorizontalAlignment="Left" Margin="844,49,0,0" VerticalAlignment="Top"  Width="70"/>
+        <Label Content="Курс гривні до валюти" HorizontalAlignment="Left" Margin="797,133,0,0" VerticalAlignment="Top"  Width="175"/>
 
         <!-- Поля вводу -->
-        <TextBox HorizontalAlignment="Left" Name="BeginPrice" Height="17" Margin="56,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
-        <TextBox HorizontalAlignment="Left" Name="InterestRate" Height="17" Margin="192,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
-        <TextBox HorizontalAlignment="Left" Name="DurationMonth" Height="17" Margin="313,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
-        <TextBox HorizontalAlignment="Left" Name="Casco" Height="17" Margin="57,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
-        <TextBox HorizontalAlignment="Left" Name="VAT" Height="17" Margin="192,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
-        <TextBox HorizontalAlignment="Left" Name="FirtsPay" Height="16" Margin="323,144,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="78"/>
-        <TextBox HorizontalAlignment="Center" Name="CurrencyToHrivnya" Height="17" Margin="0,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <TextBox HorizontalAlignment="Left" Name="BeginPrice" Height="28" Margin="301,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Center" Name="InterestRate" Height="28" Margin="0,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Name="DurationMonth" Height="26" Margin="642,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <TextBox HorizontalAlignment="Left" Name="Casco" Height="27" Margin="302,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Center" Name="VAT" Height="27" Margin="0,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Name="FirtsPay" Height="27" Margin="642,184,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Name="CurrencyToHrivnya" Height="26" Margin="830,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
 
         <!-- Радіо кнопки для вибору типу початкового внеску -->
-        <RadioButton Content="Відсоток" Name="FirstPayPercentRB" HorizontalAlignment="Left" Margin="323,109,0,0" VerticalAlignment="Top" IsChecked="True" />
-        <RadioButton Content="Сумма" Name="FirstPayCashRB" HorizontalAlignment="Left" Margin="323,129,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Відсоток" Name="FirstPayPercentRB" HorizontalAlignment="Left" Margin="619,159,0,0" VerticalAlignment="Top" IsChecked="True" Height="25" Width="80" />
+        <RadioButton Content="Сумма" Name="FirstPayCashRB" HorizontalAlignment="Left" Margin="704,161,0,0" VerticalAlignment="Top" Height="23" Width="67"/>
 
         <!-- Вибір валюти -->
-        <ComboBox HorizontalAlignment="Center" Name="Currency" Height="19" Margin="0,60,0,0" VerticalAlignment="Top" Width="79"/>
+        <ComboBox HorizontalAlignment="Left" Name="Currency" Height="29" Margin="831,98,0,0" VerticalAlignment="Top" Width="95" BorderBrush="#FF1D87FF"/>
 
         <!-- Таблиця для результатів -->
-        <DataGrid x:Name="DataGrid" AutoGenerateColumns="False" HorizontalAlignment="Center" Height="236" Margin="0,302,0,0" VerticalAlignment="Top" Width="980">
+        <DataGrid x:Name="DataGrid"  AutoGenerateColumns="False" HorizontalAlignment="Center" Height="314" Margin="0,302,0,0" VerticalAlignment="Top" Width="1004">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Місяць" Binding="{Binding Month}" Width="Auto"/>
                 <DataGridTextColumn Header="Опис" Binding="{Binding Description}" Width="Auto"/>

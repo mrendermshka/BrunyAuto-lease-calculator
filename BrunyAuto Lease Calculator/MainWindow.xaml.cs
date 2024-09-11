@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Text;
 using TheArtOfDev.HtmlRenderer.PdfSharp;
 using System.IO;
+using System.Drawing;
+using System.Windows.Media.Imaging;
 
 
 
@@ -14,6 +16,17 @@ namespace BrunyAuto_Lease_Calculator
         public MainWindow()
         {
             InitializeComponent();
+            byte[] logoBytes = Properties.Resources.logo;
+            BitmapImage bitmapImage = new BitmapImage();
+            using (MemoryStream ms = new MemoryStream(logoBytes))
+            {
+                bitmapImage.BeginInit();
+                bitmapImage.StreamSource = ms;
+                bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                bitmapImage.EndInit();
+                bitmapImage.Freeze();  // Freeze to make it thread-safe and ready for use in UI.
+            }
+            this.Icon = bitmapImage;
             // Додаємо валюти в ComboBox
             Currency.ItemsSource = new List<string> { "USD", "EUR", "UAH" };
             Currency.SelectedIndex = 0; // Встановлюємо валюту за замовчуванням

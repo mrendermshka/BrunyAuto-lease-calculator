@@ -67,3 +67,45 @@ C:\Users\lodki\OneDrive\Рабочий стол\BrunyAuto-lease-calculator\Bruny
 C:\Users\lodki\OneDrive\Рабочий стол\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.pdb
 C:\Users\lodki\OneDrive\Рабочий стол\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.genruntimeconfig.cache
 C:\Users\lodki\OneDrive\Рабочий стол\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\ref\BrunyAuto Lease Calculator.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\runtimes\win-x64\native\wkhtmltox.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\runtimes\win-x86\native\wkhtmltox.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\BrunyAuto Lease Calculator.exe
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\BrunyAuto Lease Calculator.deps.json
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\BrunyAuto Lease Calculator.runtimeconfig.json
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\BrunyAuto Lease Calculator.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\BrunyAuto Lease Calculator.pdb
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\DinkToPdf.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\WkHtmlToPdfDotNet.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\HtmlRenderer.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\HtmlRenderer.PdfSharp.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\PdfSharp.Charting.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\PdfSharp.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\de\PdfSharp.Charting.resources.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\de\PdfSharp.resources.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libwkhtmltox.so
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libwkhtmltox.so
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\runtimes\linux-x86\native\libwkhtmltox.so
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libwkhtmltox.dylib
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.csproj.AssemblyReference.cache
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\App.g.cs
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator_MarkupCompile.cache
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator_MarkupCompile.lref
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\MainWindow.baml
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.g.resources
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.AssemblyInfoInputs.cache
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.AssemblyInfo.cs
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.csproj.CoreCompileInputs.cache
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.sourcelink.json
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAut.33FD1776.Up2Date
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\refint\BrunyAuto Lease Calculator.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.pdb
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.genruntimeconfig.cache
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\ref\BrunyAuto Lease Calculator.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto_Lease_Calculator.Properties.Resources.resources
+D:\BrunyAuto-lease-calculator\BrunyAuto Lease Calculator\obj\Debug\net6.0-windows\BrunyAuto Lease Calculator.csproj.GenerateResource.cache

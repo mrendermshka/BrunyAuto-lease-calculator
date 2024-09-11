@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lodki\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\",
+  "WorkspaceRootPath": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|c:\\users\\lodki\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\brunyauto-lease-calculator\\brunyauto lease calculator\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|d:\\brunyauto-lease-calculator\\brunyauto lease calculator\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|C:\\Users\\lodki\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|d:\\brunyauto-lease-calculator\\brunyauto lease calculator\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|solutionrelative:properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|d:\\brunyauto-lease-calculator\\brunyauto lease calculator\\brunyauto lease calculator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|solutionrelative:brunyauto lease calculator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|d:\\brunyauto-lease-calculator\\brunyauto lease calculator\\brunyauto lease calculator.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{7DB2698A-CAB9-49CC-86B7-14DB6E604437}|BrunyAuto Lease Calculator.csproj|solutionrelative:brunyauto lease calculator.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,15 +30,52 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "BrunyAuto Lease Calculator",
+              "DocumentMoniker": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\BrunyAuto Lease Calculator.csproj",
+              "RelativeDocumentMoniker": "BrunyAuto Lease Calculator.csproj",
+              "ToolTip": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\BrunyAuto Lease Calculator.csproj",
+              "RelativeToolTip": "BrunyAuto Lease Calculator.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-11T23:01:00.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-09-11T23:01:10.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BrunyAuto Lease Calculator",
+              "DocumentMoniker": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\BrunyAuto Lease Calculator.csproj",
+              "RelativeDocumentMoniker": "BrunyAuto Lease Calculator.csproj",
+              "ToolTip": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\BrunyAuto Lease Calculator.csproj",
+              "RelativeToolTip": "BrunyAuto Lease Calculator.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-11T23:01:02.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\lodki\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\lodki\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\MainWindow.xaml",
+              "ToolTip": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-10T19:45:58.869Z",
@@ -34,13 +83,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lodki\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\lodki\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\BrunyAuto-lease-calculator\\BrunyAuto Lease Calculator\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAqwHEAAABhAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAcwBEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T19:45:55.777Z",
               "EditorCaption": ""
