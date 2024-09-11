@@ -1,0 +1,57 @@
+﻿<Window x:Class="BrunyAuto_Lease_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BrunyAuto_Lease_Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="656" Width="1024">
+    <Grid>
+        <Button Content="Print" HorizontalAlignment="Left" Click="Print_Click" Margin="609,49,0,0" VerticalAlignment="Top" Height="32" Width="61"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="609,86,0,0" VerticalAlignment="Top" Height="32" Width="61" Click="Calculate_Click"/>
+
+        <Label Content="Початкова ціна" HorizontalAlignment="Left" Margin="49,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Процентна ставка" HorizontalAlignment="Left" Margin="177,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Строк лізингу (місяців)" HorizontalAlignment="Left" Margin="307,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ціна каско" HorizontalAlignment="Left" Margin="56,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="Податок" HorizontalAlignment="Left" Margin="177,79,0,0" VerticalAlignment="Top"/>
+        <Label Content="Початковий внесок" HorizontalAlignment="Left" Margin="313,87,0,0" VerticalAlignment="Top"/>
+        <Label Content="Валюта" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Курс гривні до валюти" HorizontalAlignment="Center" Margin="0,96,0,0" VerticalAlignment="Top"/>
+
+        <!-- Поля вводу -->
+        <TextBox HorizontalAlignment="Left" Name="BeginPrice" Height="17" Margin="56,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <TextBox HorizontalAlignment="Left" Name="InterestRate" Height="17" Margin="192,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <TextBox HorizontalAlignment="Left" Name="DurationMonth" Height="17" Margin="313,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <TextBox HorizontalAlignment="Left" Name="Casco" Height="17" Margin="57,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <TextBox HorizontalAlignment="Left" Name="VAT" Height="17" Margin="192,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <TextBox HorizontalAlignment="Left" Name="FirtsPay" Height="16" Margin="323,144,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="78"/>
+        <TextBox HorizontalAlignment="Center" Name="CurrencyToHrivnya" Height="17" Margin="0,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+
+        <!-- Радіо кнопки для вибору типу початкового внеску -->
+        <RadioButton Content="Відсоток" Name="FirstPayPercentRB" HorizontalAlignment="Left" Margin="323,109,0,0" VerticalAlignment="Top" IsChecked="True" />
+        <RadioButton Content="Сумма" Name="FirstPayCashRB" HorizontalAlignment="Left" Margin="323,129,0,0" VerticalAlignment="Top"/>
+
+        <!-- Вибір валюти -->
+        <ComboBox HorizontalAlignment="Center" Name="Currency" Height="19" Margin="0,60,0,0" VerticalAlignment="Top" Width="79"/>
+
+        <!-- Таблиця для результатів -->
+        <DataGrid x:Name="DataGrid" AutoGenerateColumns="False" HorizontalAlignment="Center" Height="236" Margin="0,302,0,0" VerticalAlignment="Top" Width="980">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Місяць" Binding="{Binding Month}" Width="Auto"/>
+                <DataGridTextColumn Header="Опис" Binding="{Binding Description}" Width="Auto"/>
+                <DataGridTextColumn Header="Платіж (валюта)" Binding="{Binding Payment}" Width="Auto"/>
+                <DataGridTextColumn Header="Платіж (грн)" Binding="{Binding PaymentInHrivnya}" Width="Auto"/>
+                <DataGridTextColumn Header="Відсотки (валюта)" Binding="{Binding Interest}" Width="Auto"/>
+                <DataGridTextColumn Header="Відсотки (грн)" Binding="{Binding InterestInHrivnya}" Width="Auto"/>
+                <DataGridTextColumn Header="КАСКО" Binding="{Binding Casco}" Width="Auto"/>
+                <DataGridTextColumn Header="ПДВ" Binding="{Binding VAT}" Width="Auto"/>
+                <DataGridTextColumn Header="Залишок боргу" Binding="{Binding RemainingBalance}" Width="Auto" />
+                <DataGridTextColumn Header="Сума до сплати в Валюті" Binding="{Binding TotalAmountToPay}" Width="Auto"/>
+                <DataGridTextColumn Header="Сума до сплати в Гривні" Binding="{Binding TotalAmountToPayInHrivnya}" Width="Auto"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
